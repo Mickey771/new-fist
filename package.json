@@ -1,0 +1,91 @@
+{
+  "private": true,
+  "name": "fretboarder",
+  "description": "A web app to visualize scales, chords and arpeggios on all kinds of fretboards.",
+  "version": "3.2.4",
+  "license": "Mixed",
+  "main": "src/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "analyze-bundle": "vue-cli-service build --report-json && webpack-bundle-analyzer dist/report.json",
+    "build": "vue-cli-service build",
+    "coverage": "nyc npm test",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lint:js": "vue-cli-service lint --no-fix",
+    "lint:style": "vue-cli-service lint:style --no-fix",
+    "serve": "nodemon --watch vue.config.js --exec npm run serve-vue-cli",
+    "serve-vue-cli": "vue-cli-service serve --open",
+    "sitemap": "vue-cli-service sitemap",
+    "test": "mocha",
+    "test:vue": "vue-cli-service test:unit 'test/*.test.js'",
+    "surge": "surge dist oval-fireman.surge.sh"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11"
+  ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
+    "@popperjs/core": "^2.5.4",
+    "core-js": "^3.8.1",
+    "dom-to-image": "^2.6.0",
+    "file-saver": "^2.0.5",
+    "v-click-outside": "^3.1.2",
+    "vue": "^2.6.12",
+    "vue-css-modifiers": "^1.0.8",
+    "vuex": "^3.6.0",
+    "vuex-pathify": "^1.4.4"
+  },
+  "optionalDependencies": {
+    "@fortawesome/pro-regular-svg-icons": "^5.15.1",
+    "@fortawesome/pro-solid-svg-icons": "^5.15.1"
+  },
+  "devDependencies": {
+    "@cheap-glitch/stylelint-config-properties-order": "^1.0.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-plugin-unit-mocha": "^5.0.8",
+    "@vue/cli-plugin-vuex": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/test-utils": "^1.1.1",
+    "@winner-fed/stylelint-config-win": "^0.1.0",
+    "@winner-fed/vue-cli-plugin-stylelint": "^1.0.4",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.15.0",
+    "eslint-plugin-smarter-tabs": "^1.1.2",
+    "eslint-plugin-vue": "^7.2.0",
+    "esm": "^3.2.25",
+    "fibers": "^5.0.0",
+    "istanbul-instrumenter-loader": "^2.0.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "sass-mq": "^5.0.1",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
+    "stylelint-selector-bem-pattern": "^2.1.0",
+    "surge": "^0.23.1",
+    "vue-cli-plugin-sitemap": "^2.0.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack-bundle-analyzer": "^4.2.0"
+  }
+}

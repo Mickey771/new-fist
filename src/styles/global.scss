@@ -1,0 +1,197 @@
+html,
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+
+@font-face {
+	font-family: 'hw-andy-bold';
+	src: url("hw-andy-bold.woff") format("woff");
+}
+
+html {
+	min-height: 100%;
+	font-size: 10px;
+	overflow-x: hidden;
+}
+
+body {
+	flex: 1 1 auto;
+}
+
+/**
+ * Text
+ * -----------------------------------------------------------------------------
+ */
+
+p,
+a,
+h1,
+h2,
+li {
+	font-family:
+		// Fancy stuff
+		"IBM Plex Sans",
+		"Fira Sans",
+
+		// Apple
+		-apple-system,
+		BlinkMacSystemFont,
+		"San Francisco",
+		"Apple Color Emoji",
+
+		// Android
+		"Roboto Regular",
+		Roboto,
+		"Droid Sans",
+		"Noto Sans Symbols",
+
+		// Windows
+		"Segoe UI",
+		"Segoe UI Emoji",
+		"Segoe UI Symbol",
+
+		// Linux
+		Oxygen-Sans,
+		Ubuntu,
+		Cantarell,
+		Arimo,
+		"DejaVu Sans",
+
+		// Fallbacks
+		"Helvetica Neue",
+		Helvetica,
+		ui-sans-serif,
+		sans-serif;
+
+	cursor: default;
+	user-select: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+sup {
+	vertical-align: 0.25rem;
+}
+
+/**
+ * Transitions
+ * -----------------------------------------------------------------------------
+ */
+
+div {
+	transition: border-color 200ms, background-color 200ms;
+}
+
+p,
+a,
+.svg-inline--fa {
+	transition: color 200ms;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+}
+
+.fade-leave,
+.fade-enter-to {
+	opacity: 1;
+}
+
+.fade-enter-active { transition: opacity 200ms; }
+.fade-leave-active { transition: opacity 100ms; }
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+.hand-drawn {
+	font-family: 'hw-andy-bold';
+	font-size: 1.5em;
+}

@@ -1,0 +1,39 @@
+module.exports = {
+	root: true,
+
+	env: {
+		node: true
+	},
+
+	parserOptions: {
+		parser: 'babel-eslint'
+	},
+
+	extends: [
+		'eslint:recommended',
+		'plugin:vue/essential',
+		'plugin:vue/recommended',
+	],
+
+	plugins: [
+		'smarter-tabs',
+	],
+
+	rules: {
+		'no-console':                process.env.NODE_ENV === 'production' ? 'error' : 'off',
+		'no-debugger':               process.env.NODE_ENV === 'production' ? 'error' : 'off',
+		'brace-style':               ['warn', '1tbs', { allowSingleLine: true }],
+		'no-mixed-spaces-and-tabs':  ['warn', 'smart-tabs'],
+		'smarter-tabs/smarter-tabs': 'warn',
+		'no-unused-vars': [ 'error', { 'argsIgnorePattern': '^_'}]
+	},
+
+	overrides: [
+		{
+			files: ['test/*.test.js'],
+			env: {
+				mocha: true
+			}
+		}
+	],
+}

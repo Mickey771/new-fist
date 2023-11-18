@@ -1,0 +1,59 @@
+@mixin space-children-h($h) {
+    * {
+        margin-right: $h;
+    }
+}
+
+@mixin space-children-v($v) {
+    * {
+        margin-bottom: $v;
+    }
+}
+
+@mixin center-column() {
+
+}
+
+@mixin pill {
+    margin-right: 8px;
+    border-radius: 1000px;
+    border-width: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+@mixin center-position {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform:translate(50%,-50%);
+}
+
+@mixin square($w) {}
+
+@mixin center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin circle($r) {
+    width: $r;
+    height: $r;
+    border-radius: 40%;
+    border: 1px solid black;
+    
+    font-size: 1.8em;
+}
+
+@mixin outline-text($w) {
+    text-shadow:
+		(-$w)  (-$w) 0 #000,
+		0   (-$w) 0 #000,
+		($w)  (-$w)  0 #000,
+		($w)  0   0 #000,
+		($w)  ($w)  0 #000,
+		0   ($w)  0 #000,
+		(-$w)  ($w) 0 #000,
+		(-$w)  0   0 #000;
+}
